@@ -12,18 +12,18 @@ function Skills() {
   ];
 
   return (
-    <section id="skills">
-      <h2>Навички</h2>
+    <section id="skills" className="rounded-md border-2 border-l-8 border-green-900 bg-white p-5 shadow-md transition hover:shadow-xl">
+      <h2 className="mb-3 border-b-2 border-blue-900 pb-1 text-2xl font-bold text-green-900">Навички</h2>
 
-      <h3>Технічні навички</h3>
-      <ul>
+      <h3 className="mb-1 mt-3 text-xl font-semibold text-blue-900">Технічні навички</h3>
+      <ul className="list-disc pl-5">
         {technical.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
 
-      <h3>Мови</h3>
-      <ul>
+      <h3 className="mb-1 mt-3 text-xl font-semibold text-blue-900">Мови</h3>
+      <ul className="list-disc pl-5">
         {languages.map((item) => (
           <li key={item}>{item}</li>
         ))}
