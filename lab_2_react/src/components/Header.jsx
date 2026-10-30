@@ -1,4 +1,4 @@
-function Header() {
+function Header({ toggleTheme }) {
     return(
         <header className="bg-green-900 text-white p-6 border-b-4 border-blue-900 md:sticky md:top-0 md:h-screen md:overflow-auto md:border-b-0 md:border-r-4">
         <h1 className="text-3xl font-bold">Дикань Владислава</h1>
@@ -11,9 +11,14 @@ function Header() {
                 <li><a className="block border-l-4 border-transparent px-3 py-2 hover:border-blue-300 hover:bg-green-700 focus:border-blue-300 focus:bg-green-700" href="#education">Освіта</a></li>
                 <li><a className="block border-l-4 border-transparent px-3 py-2 hover:border-blue-300 hover:bg-green-700 focus:border-blue-300 focus:bg-green-700" href="#skills">Навички</a></li>
                 <li><a className="block border-l-4 border-transparent px-3 py-2 hover:border-blue-300 hover:bg-green-700 focus:border-blue-300 focus:bg-green-700" href="#experience">Досвід та навчальні проєкти</a></li>
+                <li><a className="block border-l-4 border-transparent px-3 py-2 hover:border-blue-300 hover:bg-green-700 focus:border-blue-300 focus:bg-green-700" href="#reviews">Відгуки</a></li>
                 <li><a className="block border-l-4 border-transparent px-3 py-2 hover:border-blue-300 hover:bg-green-700 focus:border-blue-300 focus:bg-green-700" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+
+        <button type="button" onClick={toggleTheme} className="mt-6 cursor-pointer rounded bg-blue-900 px-4 py-2 text-white hover:bg-blue-700">
+            Змінити тему
+        </button>
     </header>
     );
 }

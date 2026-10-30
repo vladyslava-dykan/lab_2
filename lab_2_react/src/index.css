@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.dark-mode {
+    background: #121212;
+    color: #e5e5e5;
+}
+
+.dark-mode section {
+    background: #1e1e1e;
+}
+
+.dark-mode section h2 {
+    color: #95d5b2;
+}
+
+.dark-mode section h3 {
+    color: #a5c8ff;
+}
+
+.dark-mode section a {
+    color: #a5c8ff;
+}
