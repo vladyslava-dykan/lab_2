@@ -25,9 +25,12 @@
                 <li><a href="#education">Освіта</a></li>
                 <li><a href="#skills">Навички</a></li>
                 <li><a href="#experience">Досвід та навчальні проєкти</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
+
+        <button id="theme-btn" type="button">Змінити тему</button>
     </header>
 
     <main>
@@ -73,6 +76,11 @@
             </ol>
         </section>
 
+        <section id="reviews">
+            <h2>Відгуки попередніх роботодавців</h2>
+            <div id="comments-list">Завантаження...</div>
+        </section>
+
         <section id="contacts">
             <h2>Посилання на соціальні мережі</h2>
             <a href="https://github.com/vladyslava-dykan" target="_blank" rel="noopener">GitHub</a> 
@@ -83,7 +91,33 @@
     <footer>
         <p><strong>Контакти: </strong><a href="mailto:vladyslava.dykan.kb.2025@lpnu.ua">vladyslava.dykan.kb.2025@lpnu.ua</a></p>
         <p>&copy; 2026 Дикань Владислава</p>
+
+        <div id="system-info"></div>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="https://formspree.io/f/mkjjvvgr" method="POST">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Надіслати</button>
+                <button type="button" id="close-modal">Закрити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
