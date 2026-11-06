@@ -24,7 +24,7 @@ header {
     position: sticky;        
     top: 0;
     height: 100vh;           
-    background: #1b4332;      
+    background: #1e3a8a;    
     color: white;
     padding: 30px 25px;
     border-right: 5px solid #1e3a8a;   
@@ -208,7 +208,7 @@ main section:hover {
     cursor: pointer;
 }
 
-/* Нічна тема */
+
 body.dark-mode {
     background: #121212;
     color: #e5e5e5;
