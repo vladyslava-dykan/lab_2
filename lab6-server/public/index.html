@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Резюме студентки спецальності Кібербезпека">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        footer { border-top: 5px solid #1e3a8a; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 2.5rem;">Дикань Владислава</h1> 
+        <p><strong>Junior веброзробник | Студентка спеціальності «Кібербезпека»</strong></p>
+        <p class="subtitle"><em>Прагну розвиватися у сфері безпечної вебверстки та бекенд-розробки</em></p> 
+
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#education">Освіта</a></li>
+                <li><a href="#skills">Навички</a></li>
+                <li><a href="#experience">Досвід та навчальні проєкти</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-btn" type="button">Змінити тему</button>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Про мене</h2>
+            <p>Зацікавлена у створенні сучасних, безпечних та доступних вебсайтів. Вивчаю основи мережевих технологій, алгоритми та сучасні стандарти HTML/CSS</p>
+        </section>
+
+        <section id="education">
+            <h2>Освіта</h2>
+            <article>
+                <h3>Національний університет «Львівська політехніка»</h3>
+                <p>Спеціальність: <strong> «Кібербезпека»</strong></p>
+                <p>Роки навчання: <strong>2025-2029</strong></p>
+            </article>
+        </section>
+
+        <section id="skills">
+                <h2>Навички</h2>
+
+                <h3>Технічні навички</h3>
+                <ul>
+                    <li>Проєктування структури вебсторінок за стандартами семантичної верстки HTML5</li>
+                    <li>Основи роботи з Git та GitHub</li>
+                    <li>Базове програмування на Python</li>
+                    <li>Взаємодія з сервером через мережеві протоколи</li>
+                </ul>
+
+                <h3>Мови:</h3>
+                <ul>
+                    <li>Українська-рідна</li>
+                    <li>Англійська - Intermediate (B1/B2)</li>
+                </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>Досвід та навчальні проєкти</h2>
+            <p>Практичний досвід здобуваю з виконання лабораторних робіт:</p>
+            <ol>
+                <li><strong>Розробка резюме</strong> - створення структури вебсторінки без використання CSS/JS</li>
+                <li><strong>Аналіз мережевого трафіку</strong> - дослідження захищених з'єднань у Chrome DevTools</li>
+            </ol>
+        </section>
+
+        <section id="reviews">
+            <h2>Відгуки попередніх роботодавців</h2>
+            <div id="comments-list">Завантаження...</div>
+        </section>
+
+        <section id="contacts">
+            <h2>Посилання на соціальні мережі</h2>
+            <a href="https://github.com/vladyslava-dykan" target="_blank" rel="noopener">GitHub</a> 
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Контакти: </strong><a href="mailto:vladyslava.dykan.kb.2025@lpnu.ua">vladyslava.dykan.kb.2025@lpnu.ua</a></p>
+        <p>&copy; 2026 Дикань Владислава</p>
+
+        <div id="system-info"></div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Форма зворотного зв'язку</h2>
+            <form id="contact-form">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Тема</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="topic">Категорія звернення</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Оберіть категорію</option>
+                    <option value="question">Питання</option>
+                    <option value="cooperation">Співпраця</option>
+                    <option value="other">Інше</option>
+                </select>
+
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <p id="form-status"></p>
+
+                <button type="submit">Надіслати</button>
+                <button type="button" id="close-modal">Закрити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
